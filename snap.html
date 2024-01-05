@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="snap4.css">
+    <title>WELCOME TO SNAP REMOTE</title>
+</head>
+<body class="section">
+    <header>
+        <img src="logo.svg" class="logo" href="">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li class="dropdown1">
+                        <a href="">Features<img src="icon-arrow-down.svg" class="arrow" style="margin-left: 5px;"></a>
+                        <div class="dropdown-content1">
+                            <a href=""><img src="icon-todo.svg" style="margin-right: 10px;">Todo List</a>
+                            <a href=""><img src="icon-calendar.svg" style="margin-right: 10px;">Company</a>
+                            <a href=""><img src="icon-reminders.svg" style="margin-right: 10px;">Craeers</a>
+                            <a href=""><img src="icon-planning.svg" style="margin-right: 10px;">About</a>
+                        </div>
+                    </li>
+                    <li class="dropdown2">
+                        <a href="">Company<img src="icon-arrow-down.svg" class="arrow" style="margin-left: 5px;"></a>
+                        <div class="dropdown-content2">
+                            <a href="">History</a>
+                            <a href="">Our Team</a>
+                            <a href="">Blog</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Careers</a>
+                    </li>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="btns">
+                <button class="login">Login</button>
+                <button class="register">Register</button>
+            </div>
+            <div class="toggle"><!--sidebar menu button-->
+                <div class="hamburger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <aside>
+            <img src="image-hero-desktop.png" class="desktop">
+            <img src="image-hero-mobile.png" class="mobile"> 
+        </aside>
+        <main>
+            <div class="headline">
+                <h1>Make</h1>
+                <h1>remote work</h1>
+            </div>
+            
+            <div class="description">
+                <p>
+                    Get your team in sync, no matter your location.<br>
+                    Streamline processes, create teams rituals, and<br>
+                    watch productivity soar. 
+                </p>
+            </div>
+            <button class="learn">Learn more</button>
+            <div class="brands">
+                <img src="client-databiz.svg" class="data">
+                <img src="client-audiophile.svg">
+                <img src="client-meet.svg">
+                <img src="client-maker.svg">
+            </div>
+        </main>    
+        
+    </section>
+
+    <script>
+        const toggle =document.querySelector(".toggle");
+        const sidebar =document.querySelector(".sidebar");
+        const body =document.querySelector(".section")
+
+        toggle.addEventListener("click" ,()=>{
+            toggle.classList.toggle("active");
+            sidebar.classList.toggle("active");
+            body.classList.toggle("active");
+        })
+    </script>
+</body>
+</html>
